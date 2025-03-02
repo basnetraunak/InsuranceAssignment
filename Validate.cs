@@ -4,8 +4,8 @@ namespace InsuranceWAAssignment
     class Validate
     {
         private static bool isplaced = false;// variable for checking if is placed before
-        //private static Robot? robot;//Define a variable robot of type Robot
-        //private static Table? table;//define a table variable of type Table
+        private static Robot? robot;//Define a variable robot of type Robot
+        private static Table? table;//define a table variable of type Table
 
         public static void PlaceCommandchecker(string userInput)
         {
@@ -36,8 +36,8 @@ namespace InsuranceWAAssignment
                 return;
             }
 
-            //table ??= new Table();// if table is null create table at first the table is null creating table
-            //robot ??= new Robot(x, y, facing, table);// robot object is created with x,y and facing and passing this table
+            table ??= new Table();// if table is null create table at first the table is null creating table
+            robot ??= new Robot(x, y, facing, table);// robot object is created with x,y and facing and passing this table
             isplaced = true;
 
 

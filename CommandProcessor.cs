@@ -8,9 +8,10 @@ namespace InsuranceWAAssignment
             int inputlength = userInput.Length;
             if (inputlength > 6)
             {
-                //Validate.PlaceCommandchecker(userInput);
+                Validate.PlaceCommandchecker(userInput);
                 return;
             }
+
 
 
         }
