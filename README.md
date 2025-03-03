@@ -29,29 +29,28 @@ You can exit the simulation by typing EXIT.
 Project Structure
 
 📁 InsuranceWAAssignment
+
 ├── 📄 Program.cs         # Main entry point
+
 ├── 📄 CommandProcessor.cs # Processes user commands
+
 ├── 📄 Robot.cs           # Handles robot movements and rotations
+
 ├── 📄 Table.cs           # Defines the 5x5 grid for the robot
+
 ├── 📄 Validate.cs        # Validates user input and robot state
+
 ├── 📄 Directions.cs      # Enum for possible directions
 
  Installation & Usage
- rerequisites
+
+Prerequisites
 
 .NET SDK installed on your machine.
 
 A terminal or command prompt.
 
 Running the Program
-
-Clone the repository:
-
-git clone https://github.com/your-repo/robot-movement-simulator.git
-
-Navigate to the project directory:
-
-cd InsuranceWAAssignment
 
 Compile and run the program:
 
