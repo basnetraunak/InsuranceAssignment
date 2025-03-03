@@ -47,6 +47,16 @@ namespace InsuranceWAAssignment
 
             return isplaced; // Returns `true` if robot is placed, `false` otherwise
         }
+        public static void Move()// function to validate if robot is place before moving it then calls robot.Move
+        {
+            if (!isplaced)
+            {
+                Console.WriteLine("Robot not placed yet. Use PLACE X,Y,FACING first.");
+                return;
+            }
+
+            robot?.Move(); // Call Move function from Robot.cs
+        }
 
         public static int CheckerForXORYValue(string InputToProcressForGridLocation) //command to check valid  x and y valye if valid return value else pass -1
         {

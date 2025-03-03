@@ -15,8 +15,8 @@ namespace InsuranceWAAssignment
             {
                 case "MOVE":
 
-                    // Validate.Move();
-                    Console.WriteLine("Move");
+                    Validate.Move();
+
                     break;
                 case "RIGHT":
                     //Validate.Right();
