@@ -25,8 +25,7 @@ namespace InsuranceWAAssignment
                     Validate.Left();
                     break;
                 case "REPORT":
-                    //Validate.Report();
-                    Console.WriteLine("report");
+                    Validate.Report();
                     break;
                 default:
                     Console.WriteLine($"{userInput} is an invalid command.");

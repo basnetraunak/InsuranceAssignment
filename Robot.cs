@@ -104,6 +104,13 @@ namespace InsuranceWAAssignment
 
 
         }
+        public void Report() //move function to move robot
+        {
+
+            Console.WriteLine($"ROBOT is at ({X},{Y}) and Facing {Facing}");
+
+        }
+
 
     }
 }

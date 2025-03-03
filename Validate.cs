@@ -67,6 +67,17 @@ namespace InsuranceWAAssignment
 
             robot?.Right(); // Call right function from Robot.cs clockwise
         }
+        public static void Report()// function to validate if robot is place before moving it then calls robot.Move
+        {
+            if (!isplaced)
+            {
+                Console.WriteLine("Robot not placed yet. Use PLACE X,Y,FACING first.");
+                return;
+            }
+
+            robot?.Report(); // Call left function from Robot.cs anticlockwise
+        }
+
         public static void Left()// function to validate if robot is place before moving it then calls robot.Move
         {
             if (!isplaced)
