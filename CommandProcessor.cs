@@ -19,12 +19,10 @@ namespace InsuranceWAAssignment
 
                     break;
                 case "RIGHT":
-                    //Validate.Right();
-                    Console.WriteLine("right");
+                    Validate.Right();
                     break;
                 case "LEFT":
-                    // Validate.Left();
-                    Console.WriteLine("Left");
+                    Validate.Left();
                     break;
                 case "REPORT":
                     //Validate.Report();

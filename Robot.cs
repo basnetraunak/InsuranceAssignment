@@ -61,7 +61,49 @@ namespace InsuranceWAAssignment
             else { Console.WriteLine($"Invalid Move ROBOT will fall."); Console.WriteLine($"Enter another command"); return; }
 
         }
+        public void Right() //rotate90 degree clockwise
+        {
+            switch (Facing)
+            {
+                case Directions.EAST:
+                    Facing = Directions.NORTH; // Rotate clockwise e--->n
+                    break;
+                case Directions.NORTH:
+                    Facing = Directions.WEST; // Rotate clockwise n--->w
+                    break;
+                case Directions.WEST:
+                    Facing = Directions.SOUTH; // Rotate clockwise w---->S
+                    break;
+                case Directions.SOUTH:
+                    Facing = Directions.EAST; // Rotate clockwise S------->E
+                    break;
+            }
+            Console.WriteLine($"ROBOT Turn Right===> Now facing {Facing}");
 
+
+        }
+        public void Left() //move function to move robot
+        {
+
+            switch (Facing)
+            {
+                case Directions.EAST:
+                    Facing = Directions.SOUTH; // Rotate clockwise e--->n
+                    break;
+                case Directions.SOUTH:
+                    Facing = Directions.WEST; // Rotate clockwise n--->w
+                    break;
+                case Directions.WEST:
+                    Facing = Directions.NORTH; // Rotate clockwise w---->S
+                    break;
+                case Directions.NORTH:
+                    Facing = Directions.EAST; // Rotate clockwise S------->E
+                    break;
+            }
+            Console.WriteLine($"ROBOT Turn LEFT! ===> Now facing {Facing}");
+
+
+        }
 
     }
 }
