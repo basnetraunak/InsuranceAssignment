@@ -15,14 +15,14 @@ namespace InsuranceWAAssignment
         {
             if (table == null || !Table.IsValidPosition(x, y))
             {
-                Console.Write("invalid table");
+                Console.Write("Invalid table");
                 return;
             }
             X = x;
             Y = y;
             Facing = facing;
             Table = table;
-            Console.WriteLine($"Robot placed in({X},{Y}) and face in {Facing}");
+            Console.WriteLine($"Robot placed at({X},{Y}) and facing {Facing}");
 
 
         }
@@ -78,7 +78,7 @@ namespace InsuranceWAAssignment
                     Facing = Directions.EAST; // Rotate clockwise S------->E
                     break;
             }
-            Console.WriteLine($"ROBOT Turn Right===> Now facing {Facing}");
+            Console.WriteLine($"ROBOT turned Right===> Now facing {Facing}");
 
 
         }
@@ -100,7 +100,7 @@ namespace InsuranceWAAssignment
                     Facing = Directions.EAST; // Rotate clockwise S------->E
                     break;
             }
-            Console.WriteLine($"ROBOT Turn LEFT! ===> Now facing {Facing}");
+            Console.WriteLine($"ROBOT turned LEFT! ===> Now facing {Facing}");
 
 
         }

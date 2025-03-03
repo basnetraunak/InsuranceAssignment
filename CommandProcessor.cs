@@ -28,7 +28,12 @@ namespace InsuranceWAAssignment
                     Validate.Report();
                     break;
                 default:
-                    Console.WriteLine($"{userInput} is an invalid command.");
+                    if (!Validate.IsRobotPlaced() && (userInput.ToUpper() == "MOVE" || userInput.ToUpper() == "LEFT" || userInput.ToUpper() == "RIGHT" || userInput.ToUpper() == "REPORT"))
+                    {
+                        Console.WriteLine($"Enter PLACE command First");
+                        Console.WriteLine("Invalid command.");
+                    }
+                    Console.WriteLine("Invalid command.");
                     break;
             }
 

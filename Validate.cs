@@ -23,12 +23,14 @@ namespace InsuranceWAAssignment
 
             if (RestInputArrayForPlacing.Length != 3) // since RestInputArrayForPlacing has X,Y,Face value its size is to be exact 3 if less or more then is not a valid input
             {
-                Console.WriteLine("Invalid input! PLACE command was not executed.Required format is (Place x,y,face) you provided more data or less data ");
+                Console.WriteLine("Invalid input! \nPLACE command was not executed.Required format is (Place x,y,face)\n You provided more data or less data ");
                 return;
             }
 
             int x = CheckerForXORYValue(RestInputArrayForPlacing[0]);
             int y = CheckerForXORYValue(RestInputArrayForPlacing[1]);
+            bool isInteger = int.TryParse(RestInputArrayForPlacing[2], out int stringexpected);
+            if (isInteger) { Console.WriteLine($"{stringexpected} is an invalid input, enter a string insted of number."); }
             Directions facing = ValidFacingChecker(RestInputArrayForPlacing[2]);//converting input for facing in uppar case
             if (x == -1 || y == -1 || facing == Directions.Invalid)
             {
