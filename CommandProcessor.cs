@@ -11,6 +11,30 @@ namespace InsuranceWAAssignment
                 Validate.PlaceCommandchecker(userInput);
                 return;
             }
+            switch (userInput)
+            {
+                case "MOVE":
+
+                    // Validate.Move();
+                    Console.WriteLine("Move");
+                    break;
+                case "RIGHT":
+                    //Validate.Right();
+                    Console.WriteLine("right");
+                    break;
+                case "LEFT":
+                    // Validate.Left();
+                    Console.WriteLine("Left");
+                    break;
+                case "REPORT":
+                    //Validate.Report();
+                    Console.WriteLine("report");
+                    break;
+                default:
+                    Console.WriteLine($"{userInput} is an invalid command.");
+                    break;
+            }
+
 
 
 
